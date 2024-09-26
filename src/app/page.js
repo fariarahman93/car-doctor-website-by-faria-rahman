@@ -8,7 +8,7 @@ export default function Home() {
         
         <Homepage></Homepage>
 
-        hello car doctor
+       
       </main>
      
     
