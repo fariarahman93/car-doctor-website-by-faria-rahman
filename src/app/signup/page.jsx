@@ -17,7 +17,7 @@ const SignUpPage = () => {
         };
 
         
-        const resp = await fetch("http://localhost:3001/signup/api", {
+        const resp = await fetch("http://localhost:3000/signup/api", {
             method: "POST",
             body: JSON.stringify(newUser),
             headers: {
@@ -85,7 +85,7 @@ const SignUpPage = () => {
                                             <FaGithub />
                                         </button>
                                     </div>
-                                    <h6 className='pt-3 text-black'>Have an account? <Link className='text-primary font-semibold' href={'/login'}>Log In</Link></h6>
+                                    <h6 className='pt-3 text-black'>Have an account? <Link className='text-primary font-semibold' href={'/login'}>Sign In</Link></h6>
                                 </div>
                             </form>
                         </div>
