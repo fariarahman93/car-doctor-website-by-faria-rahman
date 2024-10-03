@@ -9,7 +9,7 @@ const ServiceCard = ({service}) => {
       <figure className="overflow-hidden h-[30vh]">
        <Image height={240} width={640} src={img} alt={title}/>
       </figure>
-      <div className="card-body">
+      <div className="card-body bg-white">
         <h2 className="card-title">{title}</h2>
         <div className="card-actions justify-between items-center">
             <h6 className="text-primary font-semibold">Price : ${price}</h6>
