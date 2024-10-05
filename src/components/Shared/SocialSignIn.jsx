@@ -2,11 +2,10 @@
 import { signIn, useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import React from "react";
-import { BsGoogle } from "react-icons/bs";
+import { BsGithub, BsGoogle } from "react-icons/bs";
 
 const SocialSignin = () => {
   const router = useRouter()
-  
   const searchParams = useSearchParams()
 
   const path = searchParams.get('redirect')
@@ -17,9 +16,6 @@ const SocialSignin = () => {
           callbackUrl : path ? path : '/'
         })
     }
-    if(session.status === "authenticated"){
-        router.push('/')
-    }
     
   return (
     <div className="flex items-center justify-center space-x-3">
@@ -27,7 +23,9 @@ const SocialSignin = () => {
         <BsGoogle />
       </button>
 
-     
+      <button onClick={() => handleSocialLogin('github')}  className="btn  flex items-center justify-center text-primary">
+        <BsGithub />
+      </button>
     </div>
   );
 };

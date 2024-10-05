@@ -81,9 +81,9 @@ const Page = ({ params }) => {
                         <p ><span className="font-bold text-rose-600">Price:</span> ${price}</p>
 
                         <div className="card-actions">
-                            <Link href={`/checkout/${_id}`}>
-                                <button className="bg-rose-500 px-3 py-2 rounded-lg mt-2 w-full font-bold text-white">Check out</button>
-                            </Link>
+                        <Link href={`/checkout/${_id}`}>
+    <button className="bg-rose-500 px-3 py-2 rounded-lg mt-2 w-full font-bold text-white">Check out</button>
+</Link>
                         </div>
                     </div>
                 </div>
