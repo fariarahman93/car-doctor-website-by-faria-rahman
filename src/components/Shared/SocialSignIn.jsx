@@ -6,6 +6,7 @@ import { BsGoogle } from "react-icons/bs";
 
 const SocialSignin = () => {
   const router = useRouter()
+  
   const searchParams = useSearchParams()
 
   const path = searchParams.get('redirect')
@@ -15,6 +16,9 @@ const SocialSignin = () => {
           redirect : true,
           callbackUrl : path ? path : '/'
         })
+    }
+    if(session.status === "authenticated"){
+        router.push('/')
     }
     
   return (
