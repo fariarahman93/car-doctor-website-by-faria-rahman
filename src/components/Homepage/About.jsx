@@ -11,9 +11,9 @@ const About = () => {
         <div className='lg:w-1/2 space-y-5 p-4'>
             <h3 className='text-3xl text-orange-500 font-bold'>About Us</h3>
             <h1 className="text-5xl font-bold">We are qualified & of experience in this field</h1>
-            <p className="py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. </p>
-            <p className="py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. </p>
-            <button className="btn btn-primary">Get More Info</button>
+            <p className="py-6">We are a highly qualified team with extensive experience in our field, ready to deliver exceptional results. Our diverse expertise allows us to tackle challenges effectively and stay ahead of industry trends. </p>
+            <p className="py-6">We prioritize collaboration, tailoring our strategies to meet each client's unique needs. This personalized approach, along with our proven track record, ensures successful outcomes and lasting relationships. Trust us to guide you every step of the way.</p>
+            
         </div>
     </div>
 </div>

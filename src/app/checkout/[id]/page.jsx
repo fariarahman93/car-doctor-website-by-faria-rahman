@@ -382,7 +382,7 @@ const Checkout = ({ params }) => {
             <input
               className="btn btn-primary btn-block"
               type="submit"
-              value="Order Confirm"
+              value="Add to Cart & Order Confirm"
             />
           </div>
         </form>

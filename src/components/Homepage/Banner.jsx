@@ -17,7 +17,7 @@ const Banner = () => {
               <div className="space-y-6">
               <h1 className="text-5xl font-bold">{banner.title}</h1>
               <p>{banner.description}</p>
-              <button className="btn btn-primary mr-4">Discover More</button>
+              
               
               </div>
             </div>
