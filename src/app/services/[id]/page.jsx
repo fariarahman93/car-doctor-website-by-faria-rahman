@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { getServicesDetail } from '@/services/getServices';
+import { getServicesDetail } from '@/servicess/getServices';
 import Link from 'next/link';
 
 const Page = ({ params }) => {

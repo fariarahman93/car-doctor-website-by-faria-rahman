@@ -2,7 +2,7 @@
 import { signIn, useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import React from "react";
-import { BsGithub, BsGoogle } from "react-icons/bs";
+import { BsGoogle } from "react-icons/bs";
 
 const SocialSignin = () => {
   const router = useRouter()
@@ -23,9 +23,7 @@ const SocialSignin = () => {
         <BsGoogle />
       </button>
 
-      <button onClick={() => handleSocialLogin('github')}  className="btn  flex items-center justify-center text-primary">
-        <BsGithub />
-      </button>
+     
     </div>
   );
 };

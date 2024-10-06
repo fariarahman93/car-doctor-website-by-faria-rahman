@@ -45,7 +45,7 @@ const Navbar = () => {
               )}
             </Link>
             <IoSearchSharp className="text-xl" />
-            <a className="btn btn-outline btn-primary px-8">Appointment</a>
+            {/* <a className="btn btn-outline btn-primary px-8">Appointment</a> */}
             {status === "authenticated" && session?.user?.image && (
               <div>
                 <Image
@@ -87,10 +87,7 @@ const navItems = [
     title: "About",
     path: "/about",
   },
-  {
-    title: "Services",
-    path: "/services",
-  },
+  
   {
     title: "MyBookings",
     path: "/my-bookings",

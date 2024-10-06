@@ -198,7 +198,7 @@
 
 import { useCart } from "@/components/context/CardContext";
 
-import { getServicesDetail } from "@/services/getServices";
+import { getServicesDetail } from "@/servicess/getServices";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";

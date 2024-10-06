@@ -1,7 +1,7 @@
 import React from 'react';
 import {services} from '../../lib/sevices'
 import ServiceCard from "../cards/ServiceCard";
-import { getServices } from '@/services/getServices';
+import { getServices } from '@/servicess/getServices';
 
 
 
