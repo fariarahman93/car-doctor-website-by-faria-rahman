@@ -1,14 +1,17 @@
 
-
 "use client";
+
 import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoCartOutline, IoSearchSharp } from "react-icons/io5";
+import { useCart } from "../context/CardContext";
+
 
 const Navbar = () => {
   const { data: session, status } = useSession();
+  const { cartCount } = useCart(); // Access cartCount from CartContext
 
   return (
     <div className="bg-base-100 text-slate-900 border-b-[1px] py-2">
@@ -33,7 +36,14 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="flex space-x-3 items-center">
-            <IoCartOutline className="text-xl" />
+            <Link href="/cart" className="relative">
+              <IoCartOutline className="text-xl" />
+              {cartCount > 0 && (
+                <span className="absolute top-0 right-0 bg-red-600 text-white text-xs rounded-full px-1">
+                  {cartCount}
+                </span>
+              )}
+            </Link>
             <IoSearchSharp className="text-xl" />
             <a className="btn btn-outline btn-primary px-8">Appointment</a>
             {status === "authenticated" && session?.user?.image && (
