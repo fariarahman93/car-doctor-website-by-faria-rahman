@@ -40,39 +40,8 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* Frequently Asked Questions (FAQ) */}
-        <section className="p-8">
-          <h2 className="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-semibold">What services do you offer?</h3>
-              <p className="text-gray-600">
-                We offer a wide range of car services including oil changes, brake repair, tire rotations, engine diagnostics, and more. Visit our services page for full details.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold">How do I schedule an appointment?</h3>
-              <p className="text-gray-600">
-                You can schedule an appointment by giving us a call or through our online booking system. We recommend booking in advance to ensure availability.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold">Do you offer same-day service?</h3>
-              <p className="text-gray-600">
-                Yes, we offer same-day service for certain repairs and maintenance, depending on availability. Give us a call to check for openings.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold">Where are you located?</h3>
-              <p className="text-gray-600">
-                We are conveniently located at 123 Main Street, Saskatoon, SK. Check the map below for directions.
-              </p>
-            </div>
-          </div>
-        </section>
+       
+       
 
         {/* Map Section */}
         <section className="p-8">
